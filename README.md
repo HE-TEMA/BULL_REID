@@ -1,6 +1,6 @@
 Copyright © 2026 Bull® SAS. All rights reserved
 
-# ATOS_REID
+# BULL_REID
 
 ## Overview
 This repository provides a Docker container image based on `nvidia/cuda:12.1.0-devel-ubuntu22.04`. The container is pre-configured with CUDA 12.1.0, PyTorch, LLAVA, and essential dependencies for running machine learning and object tracking tasks. It includes additional tools and scripts for specific applications such as YOLO tracking and person re-identification.
