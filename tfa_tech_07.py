@@ -747,10 +747,8 @@ def createOrionEntity(orion_ld_endpoint, entity):
     h = {
         "Content-Type": "application/json",
         "Accept": "application/ld+json",
-        # "Fiware-Service": "hackathon",
         "Link": '<https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld>; rel="http://www.w3.org/ns/json-ld#context"; type="application/ld+json"',
     }
-    # {"content-type": "application/json"}
     try:
         response = requests.post(
             url=f"{orion_ld_endpoint}/ngsi-ld/v1/entities",
@@ -1046,7 +1044,6 @@ if __name__ == "__main__":
 
     orion_ld_endpoint = (
         os.environ.get("BROKER_URL")
-        # "https://orion.tema.digital-enabler.eng.it"  # Orion-LD server endpoint
     )
 
     minio_client = MinioClient(endpoint, access_key, secret_key, secure=True)
