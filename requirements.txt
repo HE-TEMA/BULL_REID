@@ -1,5 +1,0 @@
-pillow
-protobuf
-minio
-fastapi
-uvicorn
